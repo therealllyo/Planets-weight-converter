@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets Weight Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Planets Weight Converter</h1>
+                <form>
+                    <div class="form-group mb-2">
+                        <input type="number" id="kgInput" class=" form-control form-control-lg "
+                            placeholder="Enter your weight on Earth">
+                    </div>
+                    <div id="ouput">
+                        <div class="card ">
+                            <div class="moon bg-info mb-2">
+                                <h4>Moon:</h4>
+                                <div id="moonsOutput"></div>
+
+                            </div>
+                            <div class="card">
+                                <div class="mars bg-danger mb-2">
+                                    <h4>Mars:</h4>
+                                    <div id="marsOutput"></div>
+
+                                </div>
+                                <div class="card">
+                                    <div class="jupiter bg-warning mb-2">
+                                        <h4>Jupiter:</h4>
+                                        <div id="jupitersOutput"></div>
+
+                                    </div>
+                                    <div class="card">
+                                        <div class="saturn mb-2">
+                                            <h4>Saturn:</h4>
+                                            <div id="saturnsOutput"></div>
+
+                                        </div>
+                                        <div class="card">
+                                            <div class="neptune mb-2">
+                                                <h4>Neptune:</h4>
+                                                <div id="neptunesOutput"></div>
+
+                                            </div>
+                                            <div class="card">
+                                                <div class="venus mb-2">
+                                                    <h4>Venus:</h4>
+                                                    <div id="venusOutput"></div>
+
+                                                </div>
+                                                <div class="card">
+                                                    <div class="mercury mb-2">
+                                                        <h4>Mercury:</h4>
+                                                        <div id="mercurysOutput"></div>
+
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="uranus mb-2 bg-primary">
+                                                            <h4>Uranus:</h4>
+                                                            <div id="uranusOutput"></div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+    document.getElementById('kgInput').addEventListener('input', function (e) {
+        let kgs = e.target.value;
+        document.getElementById('moonsOutput').innerHTML = kgs / 9.81 * 1.622;
+        document.getElementById('marsOutput').innerHTML = kgs / 9.81 * 3.711;
+        document.getElementById('jupitersOutput').innerHTML = kgs / 9.81 * 24.79;
+        document.getElementById('saturnsOutput').innerHTML = kgs / 9.81 * 10.44;
+        document.getElementById('neptunesOutput').innerHTML = kgs / 9.81 * 11.15;
+        document.getElementById('venusOutput').innerHTML = kgs / 9.81 * 8.87;
+        document.getElementById('mercurysOutput').innerHTML = kgs / 9.81 * 3.7;
+        document.getElementById('uranusOutput').innerHTML = kgs / 9.81 * 8.69;
+    })
+</script>
+
+</body>
+
+</html>

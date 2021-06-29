@@ -1,0 +1,61 @@
+body {
+    margin-top: 30px;
+    color: #fff;
+    background: #333;
+}
+
+.card {
+    background: #333;
+}
+
+h4 {
+    margin-left: 8px;
+}
+
+#moonsOutput {
+    margin-left: 8px;
+}
+
+#marsOutput {
+    margin-left: 8px;
+}
+
+#jupitersOutput {
+    margin-left: 8px;
+}
+
+#saturnsOutput {
+    margin-left: 8px;
+}
+
+#neptunesOutput {
+    margin-left: 8px;
+}
+
+#venusOutput {
+    margin-left: 8px;
+}
+
+#mercurysOutput {
+    margin-left: 8px;
+}
+
+#uranusOutput {
+    margin-left: 8px;
+}
+
+.saturn {
+    background-color: rgb(144, 233, 10);
+}
+
+.neptune {
+    background-color: rgb(20, 20, 233);
+}
+
+.venus {
+    background-color: orangered;
+}
+
+.mercury {
+    background-color: rgb(255, 57, 90);
+}
